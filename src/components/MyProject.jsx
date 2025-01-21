@@ -1,12 +1,9 @@
 import Image from "next/image";
 // images import
-import pro1p1 from '../assets/projects/pro1p1.png'
-import pro1p2 from '../assets/projects/pro1p2.png'
-import pro2p1 from '../assets/projects/pro2p1.png'
-import pro2p2 from '../assets/projects/pro2p2.png'
-import pro3p1 from '../assets/projects/pro3p1.png'
-import pro3p2 from '../assets/projects/pro3p2.png'
-
+import project1 from '../assets/projects/1st-project.png'
+import project2 from '../assets/projects/2nd-project.png'
+import project3 from '../assets/projects/3rd-project.png'
+import ProjectCard from "./ui/ProjectCard";
 
 const MyProject = () => {
     return (
@@ -23,35 +20,10 @@ const MyProject = () => {
                     <p className="px-5 py-1 font-medium border border-[#545454ca] rounded-md">Graphic Design</p>
                 </div>
 
-                <div className="md:mt-8 mt-4 grid md:grid-cols-3 grid-cols-1 gap-5">
-                    {/* project 01 */}
-                    <div className="space-y-3 py-8">
-                        <div className="bg-[#FFEBDB] flex h-[490px] justify-end pr-4 relative rounded-md">
-                            <Image src={pro1p1} alt="skill images" width={240} height={350}></Image>
-                            <Image className="shadow-sm absolute -bottom-1 md:right-24 right-11" src={pro1p2} alt="skill images" width={250} height={590}></Image>
-                        </div> 
-                        <h4 className="md:text-xl text-lg font-normal text-[#FD6F00]">Web Design</h4>
-                        <p className="md:text-2xl text-xl  text-black/90">AirCalling Landing Page Design </p>
-                    </div>
-                    {/* project 02 */}
-                    <div className="space-y-3 py-8">
-                        <div className="bg-[#FFEBDB] flex h-[490px] justify-end pr-4 relative rounded-md">
-                            <Image src={pro2p1} alt="skill images" width={240} height={355}></Image>
-                            <Image className="shadow-sm absolute -bottom-1 md:right-24 right-11" src={pro2p2} alt="skill images" width={250} height={590}></Image>
-                        </div> 
-                        <h4 className="md:text-xl text-lg font-normal text-[#FD6F00]">Web Design</h4>
-                        <p className="md:text-2xl text-xl  text-black/90">Business Landing Page Design</p>
-                    </div>
-                    {/* project 01 */}
-                    <div className="space-y-3 py-8">
-                        <div className="bg-[#FFEBDB] flex h-[490px] justify-end pr-4 relative rounded-md">
-                            <Image src={pro3p1} alt="skill images" width={240} height={350}></Image>
-                            <Image className="shadow-sm absolute -bottom-1 md:right-24 right-11" src={pro3p2} alt="skill images" width={250} height={590}></Image>
-                        </div> 
-                        <h4 className="md:text-xl text-lg font-normal text-[#FD6F00]">Web Design</h4>
-                        <p className="md:text-2xl text-xl  text-black/90">Ecom Web Page Design </p>
-                    </div>
-                    
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 justify-items-center place-items-center md:mt-10 mt-4">
+                    <ProjectCard image={project1} title={'Web Design'} description={'Ecom Web Page Design'}/>
+                    <ProjectCard image={project2} title={'Web Design'} description={'Business Landing Page Design'}/>
+                    <ProjectCard image={project3} title={'Web Design'} description={'Ecom Web Page Design '}/>
                 </div>
             </div>
         </section>
