@@ -21,7 +21,7 @@ const MyProject = dynamic(() => import('@/components/MyProject'),{
   loading: () => <div className="h-[100px] bg-green-500 w-full animate-bounce duration-700"></div>
 })
 const Testimonials = dynamic(() => import('@/components/Testimonials'),{
-  ssr: true,
+  ssr: false,
   loading: () => <div className="h-[100px] bg-green-500 w-full animate-bounce duration-700"></div>
 })
 const Footer = dynamic(() => import('@/shared/Footer'),{
