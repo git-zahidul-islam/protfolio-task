@@ -1,3 +1,4 @@
+import Contact from '@/components/Contact';
 import dynamic from 'next/dynamic';
 
 const Navbar = dynamic(() => import('@/shared/Navbar'), {
@@ -38,6 +39,7 @@ export default function Home() {
       <Services/>
       <MyProject/>
       <Testimonials/>
+      <Contact/>
       <Footer/>
     </div>
   );
