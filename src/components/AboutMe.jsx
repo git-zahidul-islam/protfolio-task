@@ -65,8 +65,8 @@ const AboutMe = () => {
         </div>
 
         {/* About me details */}
-        <div className="md:space-y-4 space-y-2 md:w-[50%] w-full">
-          <h1 className="md:text-4xl text-[40px] md:font-bold font-semibold text-[#000000] text-center md:text-start">
+        <div className="md:space-y-4 space-y-2 md:w-[50%] w-full dark:text-white">
+          <h1 className="md:text-4xl text-[40px] md:font-bold font-semibold text-[#000000] dark:text-white text-center md:text-start">
             About Me
           </h1>
           <p>

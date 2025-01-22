@@ -6,7 +6,7 @@ const ProjectCard = ({title,description,image}) => {
             <Image className="rounded-lg" src={image} width={450} height={448} objectFit="cover" alt="project image 1"></Image>
             <div className="md:mt-5 mt-2">
                 <h4 className="md:text-xl text-lg font-normal text-[#FD6F00]">{title}</h4>
-                <p className="md:text-2xl text-xl  text-black/90 font-bold">{description}</p>
+                <p className="md:text-2xl text-xl  text-black/90 dark:text-white font-bold">{description}</p>
             </div>
         </div>
     );

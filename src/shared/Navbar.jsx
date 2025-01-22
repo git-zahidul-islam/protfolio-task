@@ -24,7 +24,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <a href="#" className="text-xl font-bold flex gap-3 items-center justify-center">
               <Image src={logo} alt="logo" width={45} height={45}></Image>
-              <h1 className="md:text-[45px] text-[35px] md:block hidden"><span className="font-bold text-[#000000f0]">M</span><span className="font-normal text-[#8a8a8a]">umair</span></h1>
+              <h1 className="md:text-[45px] text-[35px] md:block hidden"><span className="font-bold text-[#000000f0] dark:text-white">M</span><span className="font-normal text-[#8a8a8a] dark:text-white">umair</span></h1>
             </a>
           </div>
 
@@ -49,7 +49,7 @@ const Navbar = () => {
               onClick={toggleMenu}
               className="text-gray-800 focus:outline-none"
             >
-              <GiHamburgerMenu className="text-black/90 text-3xl" />
+              <GiHamburgerMenu className="text-black/90 dark:text-white text-3xl" />
             </button>
           </div>
         </div>

@@ -51,7 +51,7 @@ const Testimonials = () => {
     }, []);
 
     return (
-        <section id="testimonials" className="md:w-[80%] w-full mx-auto md:px-0 px-2 md:pb-16 pb-6">
+        <section id="testimonials" className="md:w-[80%] w-full mx-auto md:px-0 px-2 md:pb-16 pb-6 dark:text-white">
             <div className="space-y-3">
                 <h1 className="md:text-[60px] text-[40px] font-semibold text-center">Testimonials</h1>
                 <p className="text-xl font-normal md:w-[70%] mx-auto text-center">
@@ -69,7 +69,7 @@ const Testimonials = () => {
                         {reviews.map((review, index) => (
                             <div
                                 key={index}
-                                className="bg-[#F8F8F8] p-8 flex md:flex-row flex-col items-center gap-6 rounded-md w-full flex-shrink-0"
+                                className="bg-[#F8F8F8] p-8 flex md:flex-row flex-col items-center gap-6 rounded-md w-full flex-shrink-0 dark:text-black"
                             >
                                 <div>
                                     <Image src={review.image} alt="review images" width={230} height={230} />

@@ -31,7 +31,7 @@ const Footer = dynamic(() => import('@/shared/Footer'),{
 
 export default function Home() {
   return (
-    <div className='md:space-y-0 space-y-10'>
+    <div className='md:space-y-0 space-y-10 bg-white dark:bg-[#1E1E1E]'>
       <Navbar/>
       <Banner/>
       <AboutMe/>
