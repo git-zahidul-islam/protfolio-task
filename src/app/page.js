@@ -1,4 +1,5 @@
 import Contact from '@/components/Contact';
+import ScrollToTopButton from '@/components/ui/ScrollToTopButton';
 import dynamic from 'next/dynamic';
 
 const Navbar = dynamic(() => import('@/shared/Navbar'), {
@@ -41,6 +42,7 @@ export default function Home() {
       <Testimonials/>
       <Contact/>
       <Footer/>
+      <ScrollToTopButton/>
     </div>
   );
 }
